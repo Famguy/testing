@@ -22,3 +22,4 @@ vignettes/*.pdf
 # More files
 tests/tests.Rproj
 try.R
+.Rproj.user

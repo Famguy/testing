@@ -1,8 +1,11 @@
 context("spc.rubberband")
 
-test_that("PARACETAMOL", {
+test_that("Parameters: ", {
   p <- paracetamol [,, 175 ~ 1800]
   pv <- as.vector(p@data$spc)
+  
+  x <- p@wavelength
+  y <- p@data$spc
   
   # Lower rubberband baseline
   disp <- par(mfrow=c(1, 2))
