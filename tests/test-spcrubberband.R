@@ -9,7 +9,7 @@ test_that("Parameters: ", {
   
   # Lower rubberband baseline
   disp <- par(mfrow=c(1, 2))
-  bll <- do.call(spc.rubberband,list(p, noise = 300))
+  bll <- spc.rubberband(p, noise = 300)
   plot(p)
   plot(bll, add = TRUE, col=3)
   # check withrespect to lower limit of data
